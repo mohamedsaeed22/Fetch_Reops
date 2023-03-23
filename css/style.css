@@ -1,0 +1,139 @@
+:root {
+  --main-color: #10cab7;
+  --secondary-color: #2c4755;
+  --section-padding: 60px;
+  --section-background: #f6f6f6;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: auto;
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  background-color: #eee;
+  min-height: 100vh;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*small*/
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/*meduim*/
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/*small*/
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.container {
+  margin-top: 10px;
+  border-radius: 8px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--secondary-color);
+}
+.container .search {
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #10cab7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.container .search .search-input {
+  flex: 1;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  font-size: 18px;
+}
+.container .search .validate{
+    padding: 10px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    color: #2c4755;
+    border: 1px solid #eee;
+    cursor: pointer;
+}
+.container .search .validate:hover{
+    background-color: #ddd;
+}
+.container .search .input-username {
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  color: #2c4755;
+  border: 1px solid #eee;
+}
+
+.container .data {
+  max-height: 500px;
+  overflow-x: auto;
+  margin-top: 10px;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #10cab7;
+}
+.container .data .repo {
+  background-color: rgb(216, 202, 202);
+  border-radius: 8px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.container .data span {
+  text-align: center;
+  display: block;
+}
+.container .data .repo p {
+  flex: 1;
+}
+.container .data .repo .stars-btn {
+  padding: 8px;
+  border-radius: 8px;
+  outline: none;
+  color: var(--section-background);
+  border: 1px solid #eee;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+}
+.container .data .repo .view-btn {
+  padding: 8px;
+  border-radius: 8px;
+  outline: none;
+  color: var(--section-background);
+  border: 1px solid #eee;
+  cursor: pointer;
+  background-color: var(--secondary-color);
+}
+
+.container .data .repo .view-btn:hover {
+    background-color: #606b6a;
+}
